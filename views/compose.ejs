@@ -1,0 +1,18 @@
+<%- include("partials/header.ejs") %>
+
+<h1>Create New Project</h1>
+<form action="/compose" method="post">
+
+  <label for="projectName"></label>
+  <input name="projectName" type="text" class="feedback-input" placeholder="Project Name" />
+
+  <label for="leaderName"></label>
+  <input name="leaderName" type="text" class="feedback-input" placeholder="Leader Name" />
+  
+  <label for="projectDescription"></label>
+  <textarea name="projectDescription" class="feedback-input" placeholder="Add Project Description"></textarea>
+  
+  <input type="submit" value="SUBMIT" />
+</form>
+
+<%- include("partials/footer.ejs") %>

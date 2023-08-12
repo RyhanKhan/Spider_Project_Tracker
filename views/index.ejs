@@ -1,0 +1,15 @@
+<%- include("partials/header.ejs") %>
+
+<h1>Available Projects</h1>
+
+<% ourProjects.forEach(project => { %>
+<h2><%= project.ourProjectName %></h2>
+<h3><%= project.ourLeaderName%></h3>
+
+<p>
+  <%= project.ourProjectDescription.substring(0,100)+" ..." %>
+
+  <a href="/projects/<%= project.ourProjectName %>">Read more</a>
+</p>
+
+<% }); %> <%- include("partials/footer.ejs") %>
